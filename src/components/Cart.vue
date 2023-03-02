@@ -1,6 +1,10 @@
 <template>
   <div class="cart">
     <h1>My Cart</h1>
+    <button @click="orders">Orders</button>
+    <button class="btn btn-primary" @click.prevent="products">
+      Continue Shopping
+    </button>
     <div v-if="!this.empty" class="cart-items">
       <div v-for="(item, index) in cartItems" :key="index" class="cart-item">
         <img
@@ -88,6 +92,14 @@ export default {
             this.empty = true;
           }
         });
+    },
+    products() {
+      // Perform registration logic here
+      this.$router.push("/Products");
+      // You can make an HTTP request to your backend here to register the user
+    },
+    orders() {
+      router.push("/Orders");
     },
     checkout() {
       axios

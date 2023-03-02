@@ -2,6 +2,7 @@
   <div v-if="self.content" class="product-list">
     <h1>Products</h1>
     <button @click="goToCart()">Go to Cart</button>
+    <button @click="orders">Orders</button>
     <div class="product-grid">
       <div
         v-for="(product, index) in self.products"
@@ -55,6 +56,9 @@ export default {
     mounted,
   },
   methods: {
+    orders() {
+      router.push("/Orders");
+    },
     addToCart(product) {
       // Add the product to the cart
       console.log(product);

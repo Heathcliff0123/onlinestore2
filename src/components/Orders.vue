@@ -24,6 +24,7 @@
     <button class="btn btn-primary" @click.prevent="products">
       Continue Shopping
     </button>
+    <button @click="goToCart()">Go to Cart</button>
   </div>
 </template>
 
@@ -58,6 +59,9 @@ export default {
       // Perform registration logic here
       this.$router.push("/Products");
       // You can make an HTTP request to your backend here to register the user
+    },
+    goToCart() {
+      router.push("/Cart");
     },
   },
 };
@@ -97,6 +101,9 @@ tr:nth-child(even) {
 }
 tr:nth-child(odd) {
   background-color: #333;
+  color: #f2f2f2;
+}
+.order-list p {
   color: #f2f2f2;
 }
 
