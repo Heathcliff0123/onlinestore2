@@ -10,7 +10,7 @@
         />
         <div class="item-details">
           <h2>{{ item.name }}</h2>
-          <p>Price: {{ item.price }}</p>
+          <p>Price: R{{ item.price }}</p>
           <p>Quantity: 1</p>
         </div>
         <button @click="removeItem(item.id)">Remove</button>

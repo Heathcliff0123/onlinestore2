@@ -16,7 +16,7 @@
         <div class="product-details">
           <h2>{{ product.name }}</h2>
           <p>{{ product.descr }}</p>
-          <p>Price: R {{ product.price }}</p>
+          <p>Price: R{{ product.price }}</p>
         </div>
         <button @click="addToCart(product)">Add to Cart</button>
       </div>

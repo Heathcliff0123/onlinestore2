@@ -15,17 +15,12 @@
           <td>{{ order.id }}</td>
           <td>{{ order.orderDate }}</td>
           <td>{{ order.deliveryDate }}</td>
-          <!-- <td>
-            <ul>
-              <li v-for="(item, i) in order.items" :key="i">
-                {{ item.name }} ({{ item.quantity }})
-              </li>
-            </ul>
-          </td> -->
-          <td>{{ order.total }}</td>
+          <td>R{{ order.total }}</td>
         </tr>
       </tbody>
     </table>
+    <p>To confirm order please send proof of payment to:</p>
+    <p>Example@gmail.com</p>
     <button class="btn btn-primary" @click.prevent="products">
       Continue Shopping
     </button>
