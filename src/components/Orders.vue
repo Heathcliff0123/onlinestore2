@@ -21,7 +21,7 @@
       </tbody>
     </table>
     <p>To confirm order please send proof of payment to:</p>
-    <p>Example@gmail.com</p>
+    <p>info@gamesstore.com</p>
   </div>
 </template>
 
