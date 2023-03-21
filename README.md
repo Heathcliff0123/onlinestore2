@@ -1,5 +1,5 @@
 # onlinestore2
-
+This project is an example of an online store created using vue for frontend and php for backend. The products arew based in a database. There is registration and login page, aswell as a product list, cart and orders list. Enjoy the project.
 ## Project setup
 ```
 npm install
@@ -13,6 +13,16 @@ npm run serve
 ### Compiles and minifies for production
 ```
 npm run build
+```
+
+### Setup Mamp Server
+```
+You need to have an MAMP server which looks at the backend folder.
+
+The ports of the MAMP server need to be:
+Apache Port 8888
+Nginx port 7888
+My Sql port 8889
 ```
 
 ### Customize configuration
