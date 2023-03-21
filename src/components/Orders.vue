@@ -1,4 +1,5 @@
 <template>
+  <Navbar />
   <div class="order-list">
     <h1>Order History</h1>
     <table>
@@ -21,17 +22,13 @@
     </table>
     <p>To confirm order please send proof of payment to:</p>
     <p>Example@gmail.com</p>
-    <button class="btn btn-primary" @click.prevent="products">
-      Continue Shopping
-    </button>
-    <button @click="goToCart()">Go to Cart</button>
   </div>
 </template>
 
 <script>
 import { mounted, beforeMount } from "vue";
-import router from "../router/index";
 import axios from "axios";
+import Navbar from "./Navbar.vue";
 export default {
   data() {
     return {
@@ -53,16 +50,7 @@ export default {
   components: {
     beforeMount,
     mounted,
-  },
-  methods: {
-    products() {
-      // Perform registration logic here
-      this.$router.push("/Products");
-      // You can make an HTTP request to your backend here to register the user
-    },
-    goToCart() {
-      router.push("/Cart");
-    },
+    Navbar,
   },
 };
 </script>

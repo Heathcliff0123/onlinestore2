@@ -5,6 +5,7 @@ import Products from "../components/Products.vue";
 import Registration from "../components/Registration.vue";
 import Login from "../components/Login.vue";
 import EditDetails from "../components/EditDetails.vue";
+import AboutPage from "../components/AboutPage.vue";
 
 const routes = [
   {
@@ -36,6 +37,11 @@ const routes = [
     path: "/EditDetails",
     name: "EditDetails",
     component: EditDetails,
+  },
+  {
+    path: "/AboutPage",
+    name: "AboutPage",
+    component: AboutPage,
   },
 ];
 

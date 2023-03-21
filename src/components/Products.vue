@@ -1,8 +1,7 @@
 <template>
+  <Navbar />
   <div v-if="self.content" class="product-list">
     <h1>Products</h1>
-    <button @click="goToCart()">Go to Cart</button>
-    <button @click="orders">Orders</button>
     <div class="product-grid">
       <div
         v-for="(product, index) in self.products"
@@ -29,6 +28,7 @@
 import { mounted, beforeMount } from "vue";
 import router from "../router/index";
 import axios from "axios";
+import Navbar from "./Navbar.vue";
 export default {
   // mounted() {
   //   console.log(products);
@@ -54,6 +54,7 @@ export default {
   components: {
     beforeMount,
     mounted,
+    Navbar,
   },
   methods: {
     orders() {
@@ -140,5 +141,10 @@ button {
 
 button:hover {
   background-color: #0069d9;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
 }
 </style>
